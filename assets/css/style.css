@@ -1,0 +1,191 @@
+/* CSS for Index Page */
+.navbar {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+nav {
+    padding-top: 30px;
+    padding: 0px;
+}
+.titlestyle {
+    color: #D6C0CC;
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+.astyle {
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;
+    /*font-family: 'Pacifico', cursive;*/
+    background-color: #6B4C5C;
+    /*background-image: url('../images/empty-plate.jpg');*/
+    opacity: 0.1%;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+/*    color: #D6C0CC;*/
+    /*background-image: url('../images/dust.png')*/
+}
+
+
+.jumbotron {
+    text-align: center;
+    color: #FFA07A;
+    /*background: url('../images/plate.jpg') no-repeat center center;*/
+    background: url('../images/empty-plate.jpg') no-repeat center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100%;
+    margin-bottom: 0px;
+    margin-top: 100px;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #D6C0CC;
+}
+
+h2, h3 {
+    color: #D6C0CC;
+}
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #D6C0CC;
+}
+
+.panel {
+    margin: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    background: none;
+    border: none;
+}
+.centerthis {
+    /*text-align: center;*/
+    background-color: #FFA07A;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+#groceryStores {}
+#google-map {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+#google-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*Thumbnail Image Scale*/
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: auto;
+}
+
+.featurette-image {
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Splash Button*/
+#start {
+    background-color: #9B818F;
+    color: #231C20;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border: none; 
+    font-size: 25px;
+}
+
+button {
+    background-color: #9B818F;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2D292B;
+    border: none; 
+    font-size: 25px;
+}
+
+.resultButton {
+    background-color: #9B818F;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #2D292B;
+    border: none; 
+    font-size: 25px;
+}
+
+input[type="text"]
+{
+    /*background: #77576A;*/
+    /*border: black;*/
+    /*outline: none;*/
+}
+
+#selectText {
+    color: #2D292B;
+}
+
+.steps {
+    text-align: center;
+}
+
+.findBtn {
+    background: none;
+}
+
+.modal-content {
+    background-color: #583A4C;
+    color: #202020;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js "></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>What's For Dinner?</title>
+</head>
+
+<body>
+
+    <div class="container animated bounceInDown splash" style="text-align: center; margin-top: 100px;">
+        <!-- <div class="container" style="text-align: center;"> -->
+            <h1 style="font-size: 100px;" class="animated infinite pulse fir">What's<br>For<br>Dinner!?</h1>   
+            <p style="font-size: 50px;">A recipe generator based on the ingredients you have.</p>
+            <button id="start">Get Started</button>
+        <!-- </div> -->
+    </div>
+    
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="titlestyle">What's for Dinner!?</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="astyle" id="trendButton">TRENDING RECIPES</span></a></li>
+                    <li><a id="openmap" href="#"><span class="astyle">STORE LOCATOR</span></a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+
+<div class="container-fluid">
+    <div class="container-fluid" id="steps">
+        <div class="row" style=" border-color: #56465D; border: solid; background-color: #D6C0CC;">
+            <div class="col-lg-4 steps">
+                <h2 id="selectText">Step One:</h2>
+                <h3 id="selectText">Add Some Ingredients</h3>
+                <form action="" method="POST" role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control col-xs-2" id="addItem" placeholder="ie. bacon" type="reset">
+                        &nbsp<br>
+                        <button class="preferences" id="ingSubmit" type="submit" class="btn btn-primary">Add</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-4 steps">
+                <h2 id="selectText">Step Two:</h2>
+                <h3 id="selectText">View and Edit your Ingredient List</h3>
+                <div class="list">
+                </div>
+            </div>
+            <div class="col-lg-4 steps">
+                <h2 id="selectText">Step Three:</h2>
+                <button class="preferences" id="getRecipe" type="submit" class="btn btn-primary">Find Me Recipes!</button>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid animated fadeInUp" id="yourRecipes">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align: center;">Here's whats for dinner!!</h1>
+                <div id="recipePreview"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Trending Recipe -->
+    <div class="container-fluid animated fadeInUp" id="trending">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align: center;">Trending Recipes</h1>
+                <div id="recipePreview">
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-7 push-md-5">
+                            <h2 class="featurette-heading">Seder What!? <span class="text-muted">Quinoa Tabbouleh</span></h2>
+                            <p class="lead">This Quinoa Tabbouleh is a perfect addition to your Seder dinner table!</p>
+                        </div>
+                        <div class="col-md-5 pull-md-7">
+                            <a href="http://allrecipes.com/recipe/25922/quinoa-tabbouleh/?internalSource=staff%20pick&referringId=985&referringContentType=recipe%20hub&clickId=cardslot%206" target="_blank">
+                            <img class="featurette-image img-fluid mx-auto" src="assets/images/quinoa.jpg" alt="Generic placeholder image">
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-7 push-md-5">
+                            <h2 class="featurette-heading">Two Words: BRUNCH. PUNCH. <span class="text-muted">Yup. brunch punch.</span></h2>
+                            <p class="lead">Sunday is truly funday with this amazing spiked punch recipe from Delish!</p>
+                        </div>
+                        <div class="col-md-5 pull-md-7">
+                            <a href="http://www.delish.com/cooking/recipe-ideas/videos/a52430/brunch-punch-video/" target="_blank">
+                            <img class="featurette-image img-fluid mx-auto" src="assets/images/punch.jpg" alt="Generic placeholder image">
+                            </a>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                    <div class="row featurette">
+                        <div class="col-md-7 push-md-5">
+                            <h2 class="featurette-heading">Go all out. <span class="text-muted">Seared Scallops and Potato Celery Root Purée</span></h2>
+                            <p class="lead">Date Night is easy with this spectacular recipe courtesy of the Barefoot Contessa</p>
+                        </div>
+                        <div class="col-md-5 pull-md-7">
+                            <a href="https://barefootcontessa.com/recipes/seared-scallops-potato-celery-root-pur%C3%A9e" target="_blank">
+                            <img class="featurette-image img-fluid mx-auto" src="assets/images/scallop.jpg" alt="Generic placeholder image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close ">&times;</span>
+                <h2>Grocery stores near you</h2>
+                <h2>Enter Zip Code:</h2>
+                <div class="form-group">
+                    <input type="text " class="form-control" id="addZip" placeholder=" ">
+                </div>
+                <!-- Trigger/Open The Modal -->
+                <button id="searchZip" class="btn">Submit</button>
+                <br>
+            </div>
+            <div class="modal-body" id="google-map">
+                <iframe id="storeMap" width="600 " height="450 " frameborder="0 " style="border:0 " src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBGnB25L1jvt7LwgV8_YnEQoFx6SAcR048&q=grocery+stores+near+" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
